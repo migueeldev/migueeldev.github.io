@@ -4,46 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portafolio de Miguel Ángel Montoya" />
-  <title>Miguel Ángel Montoya | Portafolio</title>
+  <title>migueeldev</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Miguel Angel Montoya</h1>
-    <p>Ingeniero en Sistemas Computacionales & Desarrollador Full Stack</p>
-    <nav>
-      <a href="#about">Sobre mí</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#contact">Contacto</a>
-    </nav>
-  </header>
+  <div class="header-top">
+    <img src="/img/logito.png" alt="logito" class="avatar">
+    <div class="header-text">
+      <h1>Miguel Angel Montoya</h1>
+      <p>Estudiante de Ingeniería en Sistemas Computacionales | Developer</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#contact">Contacto</a>
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </nav>
+</header>
 
   <main>
     <section id="about">
       <h2>Sobre mí</h2>
-      <p>Ingeniero en Sistemas Computacionales y desarrollador full stack. De San Luis Potsi México</p>
+      <p>Actualmente estudiante de Ingeniería en Sistemas Computacionales. De San Luis Potosí, México.</p>
     </section>
 
     <section id="projects">
       <h2>Proyectos</h2>
-      <div class="project">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve del proyecto.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="img/projects/proyecto1.png" alt="Proyecto 1">
+          <h3>Portafolio de Estructuras de Datos</h3>
+          <p>Portafolio de estructuras de datos lineales implementadas en el lenguaje de programación python.</p>
+          <a href="https://github.com/migueeldev/Portafolio-Estructuras-lineales" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="img/projects/proyecto2.png" alt="Proyecto 2">
+          <h3>Álgebra Lineal con python</h3>
+          <p>Implementacion de Álgebra lineal con ejemplos en pyhton en el que se incluye desde matrices y vectores.</p>
+          <a href="https://github.com/migueeldev/Algebra-Lineal" target="_blank">Ver en GitHub</a>
+        </div>
       </div>
-      <div class="project">
-        <h3>Proyecto 2</h3>
-        <p>Descripción breve del proyecto.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experiencia Profesional</h2>
+      <div class="experience">
+        <div class="experience-item">
+          <h3>VM Soluciones Inmobiliarias</h3>
+          <p><strong>Puesto:</strong> Desarrollador Web Junior</p>
+          <p><strong>Periodo:</strong> Enero 2025 - Mayo 2025</p>
+          <p>
+            Diseñé y desarrollé una aplicación web para la promoción y venta de bienes raíces, incluyendo casas y terrenos. Implementé mejoras de rendimiento y estrategias de mantenimiento para garantizar su funcionamiento óptimo en un servidor web. Utilicé tecnologías como HTML, CSS, JavaScript, PHP y MySQL para el desarrollo completo tanto del frontend como del backend.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Personal English School</h3>
+          <p><strong>Puesto:</strong> Desarrollo de landing page</p>
+          <p><strong>Periodo:</strong> Octubre 2024</p>
+          <p>Diseñé y desarrollé un sitio web estático para la promoción de cursos de inglés y la gestión del contacto con la escuela. Utilicé tecnologías como HTML, CSS y JavaScript para la creación de la interfaz, e integré el sitio en un servidor de hosting para su despliegue público.</p>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contacto</h2>
-      <p>Puedes contactarme en: <a href="mailto:migueeldev@gmail.com">migueeldev@gmail.com</a></p>
+      <div class="social-links">
+        <a href="mailto:migueeldev@gmail.com" target="_blank" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+            <path d="M12 13.065l-9.712-6.48a1.002 1.002 0 01.071-1.731L12 2l9.641 2.854a1.002 1.002 0 01.071 1.731L12 13.065z"/>
+            <path d="M3 8.47V18a1 1 0 001 1h16a1 1 0 001-1V8.47l-9 6.002-9-6.002z"/>
+          </svg>
+          Email
+        </a>
+        <a href="https://github.com/migueeldev" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="20" height="20">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95
+              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012.01-.27
+              c.68 0 1.36.09 2.01.27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82
+              2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+              0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/migueeldev" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="20" height="20">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513
+              16 1.146v13.708c0 .633-.526 1.146-1.175
+              1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943
+              12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c-.837
+              0-1.356-.554-1.356-1.248 0-.707.531-1.248
+              1.383-1.248.852 0 1.357.541 1.37
+              1.248 0 .694-.518 1.248-1.397
+              1.248zm4.908 8.21V9.359c0-.203.015-.406.075-.552.166-.406.545-.827
+              1.18-.827.832 0 1.165.624
+              1.165 1.538v3.876h2.401V9.304c0-2.257-1.204-3.308-2.81-3.308-1.292
+              0-1.872.722-2.194
+              1.23h.03V6.169H8.652c.03.666 0
+              7.225 0 7.225h2.401z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© 2025 migueeldev. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      toggle.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+    });
+  </script>
 </body>
 </html>
